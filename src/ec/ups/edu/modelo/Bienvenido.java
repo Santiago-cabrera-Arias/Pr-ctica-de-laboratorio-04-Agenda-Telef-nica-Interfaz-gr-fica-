@@ -15,7 +15,14 @@ import javax.swing.JLabel;
  *
  * @author santiago Cabrera
  */
-    
+   
+/**
+ * Clase Bienvenido.
+ * 
+ * Esta clase es la que pemite ingresar a registrarse y iniciar Sesion.
+ * 
+ */
+
     public class Bienvenido extends JFrame implements ActionListener {
 
     private JLabel label1;
@@ -32,7 +39,7 @@ import javax.swing.JLabel;
         //NO se ejecuta en segundo plano al cerrar el programa
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setTitle("Bienvenido");
-        getContentPane().setBackground(Color.LIGHT_GRAY);
+        getContentPane().setBackground(Color.blue);
         //permite poner el logo en la parte superior
         setIconImage(new ImageIcon(getClass().getResource("/images/icon.png")).getImage());
 
@@ -47,12 +54,12 @@ import javax.swing.JLabel;
         //el tres para que se vea en negita y cursiva.
         //tamano de la letra en pixels
         label2.setFont(new Font("Andale Mono", 3, 18));
-        //ponemos el colr del texto
+        //ponemos el color del texto
         label2.setForeground(Color.white);
         add(label2);
 
-        label3 = new JLabel("+_+ 2020 Santiago Cabrera >_+");
-        label3.setBounds(190, 500, 240, 30);
+        label3 = new JLabel("+_+ 2020 Cabrera's Company >_+");
+        label3.setBounds(190, 500, 270, 30);
         label3.setFont(new Font("Andale Mono", 3, 16));
         label3.setBackground(Color.white);
         add(label3);
@@ -93,7 +100,7 @@ import javax.swing.JLabel;
     //Damos funcionalidad a los botones.
     @Override
     public void actionPerformed(ActionEvent ae) {
-        //getResource para que cuando el usuario pulse el boton se cumpla la accion
+        //getSource para que cuando el usuario pulse el boton se cumpla la accion
         if (ae.getSource() == boton1) {
 
             Registrarse registrar = new Registrarse();

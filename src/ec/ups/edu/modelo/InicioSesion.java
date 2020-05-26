@@ -20,6 +20,12 @@ import javax.swing.JTextField;
  * @author santiago Cabrera
  */
     
+/**
+ * Clase Iniciar Sesion.
+ * 
+ * Esta clase  nos permite inciar sesion.
+ * 
+ */
     public class InicioSesion extends JFrame implements ActionListener {
 
     private JLabel label1;
@@ -35,7 +41,7 @@ import javax.swing.JTextField;
 
         setLayout(null);
         setTitle("Inicio Sesion");
-        getContentPane().setBackground(Color.white);
+        getContentPane().setBackground(Color.RED.darker());
         setIconImage(new ImageIcon(getClass().getResource("/images/icon.png")).getImage());
 
         label1 = new JLabel("Iniciar Sesion");
@@ -76,6 +82,8 @@ import javax.swing.JTextField;
 
     }
 
+    //Accion de los  botones
+    
     @Override
     public void actionPerformed(ActionEvent ae) {
 

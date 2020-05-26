@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package ec.ups.edu.modelo;
 
 import java.awt.Color;
@@ -17,6 +13,13 @@ import javax.swing.JLabel;
 /**
  *
  * @author santiago Cabrera
+ */
+
+/**
+ * Clase Usuario.
+ * 
+ * Esta clase nos permite ingresar a las diferentes clases.
+ * 
  */
     
     public class Usuario extends JFrame implements ActionListener {
@@ -33,17 +36,18 @@ import javax.swing.JLabel;
 
         setLayout(null);
         setTitle("Usuario");
-        getContentPane().setBackground(Color.LIGHT_GRAY);
+        getContentPane().setBackground(Color.blue.brighter());
         setIconImage(new ImageIcon(getClass().getResource("/images/icon.png")).getImage());
 
         label1 = new JLabel("  Datos ");
         label1.setBounds(50, 15, 180, 30);
-        label1.setFont(new Font("Arial", 3, 21));
+        label1.setFont(new Font("Calibri", 3, 26));
         label1.setBackground(Color.white);
         add(label1);
 
         boton1 = new JButton("Agregar telefono");
         boton1.setBounds(60, 60, 120, 30);
+        //para poder darle accino al boton
         boton1.addActionListener(this);
         add(boton1);
 
@@ -69,6 +73,8 @@ import javax.swing.JLabel;
 
     }
 
+    //Funcionalidad de los botones
+    
     @Override
     public void actionPerformed(ActionEvent ae) {
     
@@ -79,6 +85,8 @@ import javax.swing.JLabel;
             agregarTelefono.setVisible(true);
             agregarTelefono.setResizable(false);
             agregarTelefono.setLocationRelativeTo(null);
+            //Esto nos permite hacer invisible la ventana al pasar
+            //a la siguiente o anterior ventaana
             this.setVisible(false);
 
         } else if (ae.getSource() == boton2) {
@@ -93,7 +101,7 @@ import javax.swing.JLabel;
         } else if (ae.getSource() == boton3) {
 
             Eliminar eliminar = new Eliminar();
-            eliminar.setBounds(600, 600, 600, 600);
+            eliminar.setBounds(0, 0, 400, 250);
             eliminar.setVisible(true);
             eliminar.setResizable(false);
             eliminar.setLocationRelativeTo(null);
@@ -102,7 +110,7 @@ import javax.swing.JLabel;
         } else if (ae.getSource() == boton4) {
 
             Buscar buscar = new Buscar();
-            buscar.setBounds(600, 600, 600, 600);
+            buscar.setBounds(0, 0, 400, 400);
             buscar.setVisible(true);
             buscar.setResizable(false);
             buscar.setLocationRelativeTo(this);

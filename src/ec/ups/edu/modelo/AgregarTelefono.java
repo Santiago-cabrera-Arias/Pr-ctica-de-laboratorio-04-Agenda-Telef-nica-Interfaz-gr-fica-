@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package ec.ups.edu.modelo;
 
 import java.awt.Color;
@@ -17,7 +13,14 @@ import javax.swing.JTextField;
 
 /**
  *
- * @author santi
+ * @author santiago Cabrera
+ */
+
+/***
+ * Clase Agregar telefono.
+ * 
+ * Esta clase permite agregar el telefono.
+ * 
  */
     
     public class AgregarTelefono extends JFrame implements ActionListener {
@@ -34,12 +37,12 @@ import javax.swing.JTextField;
     private JButton boton1;
     private JButton boton2;
 
-    //Caracteristica de los botones
+    //Caracteristica de los botones.
     public AgregarTelefono() {
 
         setLayout(null);
         setTitle("Agregar telefono");
-        getContentPane().setBackground(Color.lightGray);
+        getContentPane().setBackground(Color.cyan.darker());
         setIconImage(new ImageIcon(getClass().getResource("/images/icon.png")).getImage());
 
         label1 = new JLabel("Telefono");
@@ -99,7 +102,7 @@ import javax.swing.JTextField;
         add(boton2);
     }
 
-   //Damos funcionalidad  a lso botones
+   //Damos funcionalidad  a los botones.
     @Override
     public void actionPerformed(ActionEvent ae) {
 

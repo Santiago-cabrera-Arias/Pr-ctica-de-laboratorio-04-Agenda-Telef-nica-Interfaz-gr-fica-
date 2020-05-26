@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package ec.ups.edu.modelo;
 
 import java.awt.Color;
@@ -18,6 +14,13 @@ import javax.swing.JTextField;
 /**
  *
  * @author santiago Cabrera
+ */
+
+/**
+ * clase Editar
+ * 
+ * Esta clase permite editar el telefono 
+ * 
  */
     
     public class Editar extends JFrame implements ActionListener {
@@ -40,7 +43,7 @@ import javax.swing.JTextField;
 
         setLayout(null);
         setTitle("Editar");
-        getContentPane().setBackground(Color.LIGHT_GRAY);
+        getContentPane().setBackground(Color.red.darker());
         setIconImage(new ImageIcon(getClass().getResource("/images/icon.png")).getImage());
 
         label1 = new JLabel("Ingrese el codigo a actualizar");

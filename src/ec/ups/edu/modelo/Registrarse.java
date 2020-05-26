@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package ec.ups.edu.modelo;
 
 import java.awt.Color;
@@ -18,6 +14,13 @@ import javax.swing.JTextField;
 /**
  *
  * @author santiago Cabrera
+ */
+
+/**
+ * Clase Registrarse.
+ * 
+ * Esta clase nos permite registrarse.
+ * 
  */
 
     public class Registrarse extends JFrame implements ActionListener{
@@ -41,7 +44,7 @@ import javax.swing.JTextField;
         
         setLayout(null);
         setTitle("Registro");
-        getContentPane().setBackground(Color.red);
+        getContentPane().setBackground(Color.red.brighter());
         setIconImage(new ImageIcon(getClass().getResource("/images/icon.png")).getImage());
         
         
@@ -141,3 +144,5 @@ import javax.swing.JTextField;
          
     
 }
+
+

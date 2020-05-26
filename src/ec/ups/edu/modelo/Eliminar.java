@@ -19,6 +19,13 @@ import javax.swing.JTextField;
  *
  * @author santiago Cabrera
  */
+
+/**
+ * Clase Eliminar
+ * 
+ * Esta clase nos permite eliminar el telefono al ingresar un codigo.
+ * 
+ */
     
     public class Eliminar extends JFrame implements ActionListener {
 
@@ -32,7 +39,7 @@ import javax.swing.JTextField;
 
         setLayout(null);
         setTitle("Eliminar telefono");
-        getContentPane().setBackground(Color.LIGHT_GRAY);
+        getContentPane().setBackground(Color.red.darker());
         setIconImage(new ImageIcon(getClass().getResource("/images/icon.png")).getImage());
 
         label1 = new JLabel("Eliminar telefono");
@@ -63,6 +70,8 @@ import javax.swing.JTextField;
 
     }
 
+    //Funcionalidad de los botones.
+    
     @Override
     public void actionPerformed(ActionEvent ae) {
 

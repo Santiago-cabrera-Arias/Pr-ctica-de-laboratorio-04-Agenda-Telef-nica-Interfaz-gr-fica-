@@ -81,7 +81,7 @@ import javax.swing.JLabel;
         if (ae.getSource() == boton1) {
 
             AgregarTelefono agregarTelefono = new AgregarTelefono();
-            agregarTelefono.setBounds(600, 600, 600, 600);
+            agregarTelefono.setBounds(0, 0, 450, 550);
             agregarTelefono.setVisible(true);
             agregarTelefono.setResizable(false);
             agregarTelefono.setLocationRelativeTo(null);

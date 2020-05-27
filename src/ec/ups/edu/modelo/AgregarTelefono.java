@@ -42,7 +42,7 @@ import javax.swing.JTextField;
 
         setLayout(null);
         setTitle("Agregar telefono");
-        getContentPane().setBackground(Color.cyan.darker());
+        getContentPane().setBackground(Color.red.darker());
         setIconImage(new ImageIcon(getClass().getResource("/images/icon.png")).getImage());
 
         label1 = new JLabel("Telefono");
